@@ -8,8 +8,8 @@ import net.java.springboot.model.Vestiaire;
 
 public interface VestiaireRepository extends JpaRepository<Vestiaire, Long> {
 
-	 List<Vestiaire> findByPublished(boolean published);
+	 List<Vestiaire> findByNum(long num);
 
-	 List<Vestiaire> findByTitleContaining(String num);
+	
 	
 }
